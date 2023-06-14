@@ -1,0 +1,283 @@
+/* Подключение шрифтов и стили */
+@font-face {
+    font-family: BaiJamjuree-Bold-700, sans-serif;
+    src: url(../font/BaiJamjuree-Bold-700.ttf);
+}
+
+@font-face {
+    font-family: Spectral-Regular-400, sans-serif;
+    src: url(../font/Spectral-Regular-400.ttf);
+}
+
+@font-face {
+    font-family: Spectral-Medium-500, sans-serif;
+    src: url(../font/Spectral-Medium-500.ttf);
+}
+
+@font-face {
+    font-family: Spectral-Bold-700, sans-serif;
+    src: url(../font/Spectral-Bold-700.ttf);
+}
+
+.font__baijamjuree-bold-700 {
+    font-family: BaiJamjuree-Bold-700;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.font__spectral-regular-400 {
+    font-family: Spectral-Regular-400;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font__spectral-medium-500 {
+    font-family: Spectral-Medium-500;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.font__spectral-bold-700 {
+    font-family: Spectral-Bold-700;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* font size and color для всего проекта 
+----------------------------------------------------------------*/
+
+@media screen and (max-width:1920px) {
+
+    /* font-size header navigation and button */
+    .navigation__box h3 {
+        font-size: 32px;
+        color: #3C3030;
+    }
+
+    .header__button h3, .header__button a {
+        font-size: 32px;
+        color: #3C3030;
+    }
+
+    /* section-1 font style */
+    .section-1__heading h1 {
+        font-size: 48px;
+        color: #0F2161;
+    }
+
+    .section-1__h3 {
+        font-size: 28px;
+        color: #2A3B78;
+    }
+
+    .section-1__flex-box h2 {
+        font-size: 32px;
+        color: #000000;
+    }
+
+    .section-1__flex-box h3 {
+        font-size: 24px;
+        color: #000000;
+    }
+
+    .section-1__button a {
+        font-size: 32px;
+        color: white;
+    }
+
+    /* section-2 font style */
+
+    .section-2__heading h1 {
+        font-size: 44px;
+    }
+
+    .confidence h2 {
+        font-size: 24px;
+        color: #3C3030;
+    }
+
+    .confidence p {
+        font-size: 20px;
+        color: #3C3030;
+    }
+
+    /* section-3 font style */
+
+    .section-3__heading h1 {
+        font-size: 40px;
+    }
+
+    .section-3__container-heading h2 {
+        font-size: 36px;
+        color: #3C3030;
+    }
+
+    .form__box input {
+        font-size: 26px;
+        color: #929292;
+    }
+
+    .form__box input::placeholder {
+        font-size: 26px;
+        color: #929292;
+    }
+
+    .form__submit input {
+        font-size: 26px;
+        cursor: pointer;
+    }
+
+    /* section-4 font style */
+
+    .section-4__heading h1 {
+        font-size: 44px;
+    }
+
+    .home__heading h2 {
+        font-size: 36px;
+        color: #3C3030;
+    }
+
+    .home__h3 h3 {
+        font-size: 24px;
+        color: #3C3030;
+    }
+
+    .home__text-inner p {
+        font-size: 20px;
+    }
+
+    /* footer font size */
+
+    .footer__box-heading h2 {
+        font-size: 36px;
+    }
+
+    .footer__text p {
+        font-size: 22px;
+    }
+
+    .footer__button h3, .footer__button a {
+        font-size: 32px;
+        color: #ffffff;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+
+    /* font-size header navigation and button */
+    .navigation__box h3 {
+        font-size: 24px;
+        color: #3C3030;
+    }
+
+    .header__button h3, .header__button a {
+        font-size: 24px;
+        color: #3C3030;
+    }
+
+    /* section-1 font style */
+    .section-1__heading h1 {
+        font-size: 30px;
+        color: #0F2161;
+    }
+
+    .section-1__h3 {
+        font-size: 18px;
+        color: #2A3B78;
+    }
+
+    .section-1__flex-box h2 {
+        font-size: 16px;
+        color: #000000;
+    }
+
+    .section-1__flex-box h3 {
+        font-size: 16px;
+        color: #000000;
+    }
+
+    .section-1__button a {
+        font-size: 24px;
+        color: white;
+    }
+
+    /* section-2 font style */
+    .confidence{
+        width: 18vw;
+    }
+    .section-2__heading h1 {
+        font-size: 32px;
+    }
+
+    .confidence h2 {
+        font-size: 18px;
+        color: #3C3030;
+    }
+
+    .confidence p {
+        font-size: 14px;
+        color: #3C3030;
+    }
+
+    /* section-3 font style */
+
+    .section-3__heading h1 {
+        font-size: 28px;
+    }
+
+    .section-3__container-heading h2 {
+        font-size: 22px;
+        color: #3C3030;
+    }
+
+    .form__box input {
+        font-size: 18px;
+        color: #929292;
+    }
+
+    .form__box input::placeholder {
+        font-size: 18px;
+        color: #929292;
+    }
+
+    .form__submit input {
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    /* section-4 font style */
+
+    .section-4__heading h1 {
+        font-size: 30px;
+    }
+
+    .home__heading h2 {
+        font-size: 26px;
+        color: #3C3030;
+    }
+
+    .home__h3 h3 {
+        font-size: 18px;
+        color: #3C3030;
+    }
+
+    .home__text-inner p {
+        font-size: 14px;
+    }
+
+    /* footer font size */
+
+    .footer__box-heading h2 {
+        font-size: 28px;
+    }
+
+    .footer__text p {
+        font-size: 18px;
+    }
+
+    .footer__button h3, .footer__button a {
+        font-size: 24px;
+        color: #ffffff;
+    }
+}
