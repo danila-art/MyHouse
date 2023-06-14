@@ -71,8 +71,46 @@
     width: 90vh;
     height: auto;
     margin: 0 auto;
+    padding-bottom: 2%;
 }
 
 .my-aplication__heading {
     text-align: center;
+}
+
+.out-aplication {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid #5d2424;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    margin: 3% auto;
+}
+
+.out-aplication__name {
+    text-align: center;
+}
+
+.out-aplication__name h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.out-aplication__flex {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.out-aplication__box {
+    display: block;
+}
+
+.out-aplication__box h1 {
+    font-size: 20px;
+}
+
+.out-aplication__box h2 {
+    font-size: 22px;
 }

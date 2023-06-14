@@ -10,9 +10,10 @@ if ($_POST['password'] != "") {
 
 $searchUser = mysqli_query($link, "SELECT * FROM `user` WHERE `number_fhone` = '$number' AND `password` = '$password' ");
 $rowUser = mysqli_fetch_assoc($searchUser);
-
-if ($rowUser['id_user'] != '') {
+if ($rowUser['rang'] == 'admin') {
+    header('Location: ../php/admin_panel.php');
+} else if ($rowUser['id_user'] != '') {
     $idUser = $rowUser['id_user'];
     setcookie("User", $idUser, time() + 3600, '/');
+    header('Location: ../');
 }
-header('Location: ../');

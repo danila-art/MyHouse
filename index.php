@@ -50,7 +50,7 @@
                 $number = $rowUser['number_fhone'];
                 $name = $rowUser['name_client'];
                 $searchAplication = mysqli_query($link, "SELECT * FROM `aplication` WHERE `number_fhone` = '$number'");
-                $arrayAplication = mysqli_fetch_assoc($searchAplication);
+
                 echo " <div class=\"my-aplictation\">
             <div class=\"auth__close\" id=\"closeButtonMyAplictation\">
                 <img src=\"img/icons/close-icon.png\" alt=\"error\">
@@ -59,7 +59,32 @@
                 <h2>Мои заявки</h2>
             </div>";
                 // Код выгрузки заявок
-
+                while ($arrayAplication = mysqli_fetch_assoc($searchAplication)) {
+                    // echo $arrayAplication['name_client'];
+                    // echo $arrayAplication['number_fhone'];
+                    // echo $arrayAplication['message'];
+                    // echo $arrayAplication['status'];
+                    echo "        <div class=\"out-aplication\">
+            <div class=\"out-aplication__name\">
+                <h1 class=\"font__spectral-bold-700\">{$arrayAplication['name_client']}</h1>
+            </div>
+            <div class=\"out-aplication__flex\">
+                <div class=\"out-aplication__box\">
+                    <h1 class=\"font__spectral-regular-400\">Номер телефона</h1>
+                    <h2 class=\"font__spectral-medium-500 \">{$arrayAplication['number_fhone']}</h2>
+                </div>
+                <div class=\"out-aplication__box\">
+                    <h1 class=\"font__spectral-regular-400\">Сообщение</h1>
+                    <h2 class=\"font__spectral-medium-500 \">{$arrayAplication['message']}</h2>
+                </div>
+                <div class=\"out-aplication__box\">
+                    <h1 class=\"font__spectral-regular-400\">Статус Заявки</h1>
+                    <h2 class=\"font__spectral-medium-500 \">{$arrayAplication['status']}</h2>
+                </div>
+            </div>
+        </div>
+";
+                }
                 echo "</div>";
             }
         }
